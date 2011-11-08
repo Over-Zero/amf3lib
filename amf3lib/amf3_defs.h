@@ -20,6 +20,7 @@ namespace AMF3
         TYPE_BYTE_ARRAY = 0x0C
     };
 
+    typedef unsigned __int8 UInt8;
     typedef unsigned __int32 UInt32;
 }
 

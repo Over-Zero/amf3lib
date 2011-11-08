@@ -3,6 +3,7 @@
 
 #include "amf3_stream.h"
 #include <string>
+#include <sstream>
 
 /// A special utility class which stands as a binary data storage.
 /// It simplifies binary data representation and printing through
@@ -35,6 +36,11 @@ public:
 
     TestPacket(const std::string& data)
         : m_data(data.c_str(), data.size())
+    {
+    }
+
+    TestPacket(const std::ostringstream& data)
+        : m_data(data.str())
     {
     }
 
@@ -150,4 +156,4 @@ private:
 
 AMF3::OutStream& operator<<(AMF3::OutStream& lhs, const TestPacket& rhs);
 
-#endif //TEST_PACKET_H
+#endif // TEST_PACKET_H

@@ -151,6 +151,14 @@
 	</References>
 	<Files>
 		<File
+			RelativePath=".\amf3_deserialization_tests.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\amf3_serialization_tests.cpp"
+			>
+		</File>
+		<File
 			RelativePath=".\amf3_tests_main.cpp"
 			>
 		</File>

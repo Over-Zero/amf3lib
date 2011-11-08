@@ -1,22 +1,22 @@
-#ifndef AMF3_INTEGER_H
-#define AMF3_INTEGER_H
+#ifndef AMF3_DOUBLE_H
+#define AMF3_DOUBLE_H
 
 #include "amf3_type_base.h"
 
 namespace AMF3
 {
-    class Integer : public TypeBase<TYPE_INTEGER>
+    class Double : public TypeBase<TYPE_DOUBLE>
     {
     public:
-        Integer() : m_value(0)
+        Double() : m_value(0)
         {
         }
 
-        Integer(UInt32 value) : m_value(value)
+        Double(double value) : m_value(value)
         {
         }
 
-        UInt32 GetInteger() const
+        double GetDouble() const
         {
             return m_value;
         }
@@ -32,11 +32,11 @@ namespace AMF3
         }
 
     private:
-        UInt32 m_value;
+        double m_value;
     };
 
-    OutStream& operator<<(OutStream& lhs, const Integer& rhs);
-    InStream& operator>>(InStream& lhs, Integer& rhs);
+    OutStream& operator<<(OutStream& lhs, const Double& rhs);
+    InStream& operator>>(InStream& lhs, Double& rhs);
 }
 
-#endif // AMF3_INTEGER_H
+#endif // AMF3_DOUBLE_H

@@ -133,11 +133,51 @@
 			Name="types"
 			>
 			<File
+				RelativePath=".\amf3_boolean.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_boolean.h"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_double.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_double.h"
+				>
+			</File>
+			<File
 				RelativePath=".\amf3_integer.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\amf3_integer.h"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_null.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_null.h"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_string.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_string.h"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_type_base.h"
+				>
+			</File>
+			<File
+				RelativePath=".\amf3_type_base_impl.h"
 				>
 			</File>
 			<File

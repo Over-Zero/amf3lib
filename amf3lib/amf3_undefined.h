@@ -1,16 +1,16 @@
 #ifndef AMF3_UNDEFINED_H
 #define AMF3_UNDEFINED_H
 
-#include "amf3_type.h"
+#include "amf3_type_base.h"
 
 namespace AMF3
 {
-    class Undefined : public IType
+    class Undefined : public TypeBase<TYPE_UNDEFINED>
     {
-    public:
-        virtual void Serialize(OutStream& stream);
-        virtual void Deserialize(InStream& stream);
-   };
+    };
+
+    OutStream& operator<<(OutStream& lhs, const Undefined& rhs);
+    InStream& operator>>(InStream& lhs, Undefined& rhs);
 }
 
 #endif // AMF3_UNDEFINED_H

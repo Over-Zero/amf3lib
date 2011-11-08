@@ -10,7 +10,7 @@ IType* TypeFactory::CreateDatum(TypeMarker type)
     switch (type)
     {
     case TYPE_UNDEFINED:
-        pResult = new Undefined;
+        //pResult = new Undefined;
         break;
 
             //TYPE_UNDEFINED = 0x00,
