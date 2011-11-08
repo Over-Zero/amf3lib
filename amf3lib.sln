@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "amf3lib", "amf3lib\amf3lib.vcproj", "{5332ED32-8725-404B-8D20-F4E71AA2B270}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "amf3_tests", "amf3_tests\amf3_tests.vcproj", "{CBFEF59E-A29F-4380-9A9E-626ED917C6C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5332ED32-8725-404B-8D20-F4E71AA2B270} = {5332ED32-8725-404B-8D20-F4E71AA2B270}
+		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6} = {64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest++", "unit_test++\UnitTest++_2008.vcproj", "{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5332ED32-8725-404B-8D20-F4E71AA2B270}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5332ED32-8725-404B-8D20-F4E71AA2B270}.Debug|Win32.Build.0 = Debug|Win32
+		{5332ED32-8725-404B-8D20-F4E71AA2B270}.Release|Win32.ActiveCfg = Release|Win32
+		{5332ED32-8725-404B-8D20-F4E71AA2B270}.Release|Win32.Build.0 = Release|Win32
+		{CBFEF59E-A29F-4380-9A9E-626ED917C6C6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBFEF59E-A29F-4380-9A9E-626ED917C6C6}.Debug|Win32.Build.0 = Debug|Win32
+		{CBFEF59E-A29F-4380-9A9E-626ED917C6C6}.Release|Win32.ActiveCfg = Release|Win32
+		{CBFEF59E-A29F-4380-9A9E-626ED917C6C6}.Release|Win32.Build.0 = Release|Win32
+		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}.Debug|Win32.Build.0 = Debug|Win32
+		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}.Release|Win32.ActiveCfg = Release|Win32
+		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,25 +1,30 @@
-#ifndef AMF3_INTEGER_H
-#define AMF3_INTEGER_H
+#ifndef AMF_UINT29_H
+#define AMF_UINT29_H
 
-#include "amf3_type.h"
 #include "amf3_defs.h"
+#include "amf3_stream.h"
 
 namespace AMF3
 {
-    // Serialization: U29 if possible, double otherwise
-    class Integer : public IType
+    class UInt29
     {
     public:
-        Integer(UInt32 value) : m_value(value)
+        UInt29() : m_value(0)
         {
+
         }
 
-        UInt32 GetInteger() const
+        UInt29(UInt32 value) : m_value(value)
+        {
+
+        }
+
+        inline UInt32 GetValue() const
         {
             return m_value;
         }
 
-        inline Integer& operator=(UInt32 value)
+        inline UInt29& operator=(UInt32 value)
         {
             m_value = value;
             return *this;
@@ -35,14 +40,14 @@ namespace AMF3
             return !(*this == value);
         }
 
-        virtual void Serialize(OutStream& stream);
-        virtual void Deserialize(InStream& stream);
+        static bool IsValid(UInt32 value);
 
     private:
         UInt32 m_value;
     };
 
-    OutStream& operator<<(OutStream& lhs, const Integer& rhs);
+    OutStream& operator<<(OutStream& lhs, const UInt29& rhs);
+    InStream& operator>>(InStream& lhs, UInt29& rhs);
 }
 
-#endif // AMF3_INTEGER_H
+#endif // AMF_UINT29_H

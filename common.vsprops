@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="common"
+	OutputDirectory="$(SolutionDir)_bin\$(ConfigurationName)"
+	IntermediateDirectory="$(SolutionDir)_bin\$(ConfigurationName)\$(ProjectName)"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(SolutionDir)common"
+		PreprocessorDefinitions="WIN32;_WINDOWS;NOMINMAX"
+		PrecompiledHeaderThrough="$(ProjectName)_pch.h"
+	/>
+</VisualStudioPropertySheet>

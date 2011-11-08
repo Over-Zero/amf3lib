@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="release"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		Optimization="2"
+		EnableIntrinsicFunctions="true"
+		PreprocessorDefinitions="NDEBUG"
+		StringPooling="true"
+		ExceptionHandling="2"
+		RuntimeLibrary="0"
+		EnableFunctionLevelLinking="true"
+		WarningLevel="3"
+		DebugInformationFormat="0"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		LinkIncremental="1"
+	/>
+</VisualStudioPropertySheet>

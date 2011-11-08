@@ -1,16 +1,16 @@
 #ifndef AMF3_DATUM_FACTORY_H
 #define AMF3_DATUM_FACTORY_H
 
-#include "amf3_type.h"
+#include "amf3_defs.h"
 
 namespace AMF3
 {
-    class IDatum;
+    class IType;
 
     class TypeFactory
     {
     public:
-        virtual IDatum* CreateDatum(Type type);
+        virtual IType* CreateDatum(TypeMarker type);
     };
 }
 #endif // AMF3_DATUM_FACTORY_H

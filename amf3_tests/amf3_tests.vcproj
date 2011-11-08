@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="amf3lib"
-	ProjectGUID="{5332ED32-8725-404B-8D20-F4E71AA2B270}"
-	RootNamespace="amf3lib"
+	Name="amf3_tests"
+	ProjectGUID="{CBFEF59E-A29F-4380-9A9E-626ED917C6C6}"
+	RootNamespace="amf3_tests"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -18,7 +18,7 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			ConfigurationType="4"
+			ConfigurationType="1"
 			InheritedPropertySheets="..\common.vsprops;..\debug.vsprops"
 			CharacterSet="2"
 			>
@@ -39,7 +39,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
+				AdditionalIncludeDirectories="$(SolutionDir)amf3lib;$(SolutionDir)unit_test++\src"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				UsePrecompiledHeader="2"
 			/>
 			<Tool
@@ -52,10 +53,15 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLibrarianTool"
+				Name="VCLinkerTool"
+				SubSystem="1"
+				TargetMachine="1"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -67,12 +73,15 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			ConfigurationType="4"
+			ConfigurationType="1"
 			InheritedPropertySheets="..\common.vsprops;..\release.vsprops"
 			CharacterSet="2"
 			WholeProgramOptimization="1"
@@ -94,7 +103,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				PreprocessorDefinitions="WIN32;NDEBUG;_LIB"
+				AdditionalIncludeDirectories="$(SolutionDir)amf3lib;$(SolutionDir)unit_test++\src"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
 				UsePrecompiledHeader="2"
 			/>
 			<Tool
@@ -107,10 +117,18 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLibrarianTool"
+				Name="VCLinkerTool"
+				GenerateDebugInformation="true"
+				SubSystem="1"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -122,6 +140,9 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
@@ -129,56 +150,12 @@
 	<References>
 	</References>
 	<Files>
-		<Filter
-			Name="types"
-			>
-			<File
-				RelativePath=".\amf3_integer.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\amf3_integer.h"
-				>
-			</File>
-			<File
-				RelativePath=".\amf3_undefined.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\amf3_undefined.h"
-				>
-			</File>
-		</Filter>
 		<File
-			RelativePath=".\amf3_defs.h"
+			RelativePath=".\amf3_tests_main.cpp"
 			>
 		</File>
 		<File
-			RelativePath=".\amf3_stream.h"
-			>
-		</File>
-		<File
-			RelativePath=".\amf3_type.h"
-			>
-		</File>
-		<File
-			RelativePath=".\amf3_type_factory.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\amf3_type_factory.h"
-			>
-		</File>
-		<File
-			RelativePath=".\amf3_uint29.cpp"
-			>
-		</File>
-		<File
-			RelativePath=".\amf3_uint29.h"
-			>
-		</File>
-		<File
-			RelativePath=".\amf3lib_pch.cpp"
+			RelativePath=".\amf3_tests_pch.cpp"
 			>
 			<FileConfiguration
 				Name="Debug|Win32"
@@ -198,11 +175,19 @@
 			</FileConfiguration>
 		</File>
 		<File
-			RelativePath=".\amf3lib_pch.h"
+			RelativePath=".\amf3_tests_pch.h"
 			>
 		</File>
 		<File
-			RelativePath=".\binary_utils.h"
+			RelativePath=".\amf3_uint29_tests.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\test_packet.cpp"
+			>
+		</File>
+		<File
+			RelativePath=".\test_packet.h"
 			>
 		</File>
 	</Files>
